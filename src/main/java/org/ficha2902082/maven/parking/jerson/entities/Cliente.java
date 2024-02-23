@@ -10,8 +10,16 @@ public class Cliente {
     public TipoDocumento tipoDocumento;
     public Long numeroDocumento;
     public Long celular;
+    public List <Carro> misCarros;
 
-    public List <Carro> misCarros =new ArrayList<Carro>();
+    public Cliente(String nombre, String apellidos, TipoDocumento tipoDocumento, Long numeroDocumento, Long celular) {
+        this.nombre = nombre;
+        this.apellidos = apellidos;
+        this.tipoDocumento = tipoDocumento;
+        this.numeroDocumento = numeroDocumento;
+        this.celular = celular;
+        this.misCarros = new ArrayList<Carro>();
+    }
 
     //metodo1: añadir carro al cliente
     //definir metodo:
